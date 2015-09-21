@@ -11,4 +11,4 @@ b = str(b)
 c = len(b)
 b = b[0:19]
 b = str.split(b)
-print("Today is", b[0], " and it is ", b[1])
+print("Today is", b[0], "and it is", b[1])
