@@ -3,5 +3,5 @@
 @author: CharlotteVDD
 print its own file name"""
 import sys
-file = sys.argv[0:]
+file = sys.argv[0]
 print(file)
