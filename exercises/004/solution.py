@@ -3,4 +3,4 @@
 @author: CharlotteVDD"""
 """program that print the reverse alphabet with the vowels capitalised"""
 
-print("zyxwUtsrqp0nmlkjIhgfEdcbA")
+print("zyxwUtsrqpOnmlkjIhgfEdcbA")
