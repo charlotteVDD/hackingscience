@@ -9,11 +9,3 @@ alph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 for l in range(26):
     for k in range(26):
         print(alph[l] + alph[k])
-    
-"""
-s = 0
-for i in range(1000):
-    if i % 3 == 0 or i % 5 == 0:
-        s = s + i
-print(s)
-"""
