@@ -4,21 +4,17 @@
 prints every possible combination of two letters,
 only lower case, one by line, ordered alphabetically.
 """
-alph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-        'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-R = len(alph)
-print(R)
+alph1 = "abcdefghijklmnopqrstuvwxyz"
+alph2 = "abcdefghijklmnopqrstuvwxyz"
 pairs = []
-i = 0
-for l in range(R):
-    for k in range(R):
-        if alph[l] != alph[k]:
-            a = alph[l] + alph[k]
-            b = alph[k] + alph[l]
-            pairs.append(a)
-            P = len(pairs)
-            if b != pairs[i]:
-                print(b)
-                i = i + 1
+comb = []
+for i in range(len(alph1)):
+    for j in range(i, len(alph2)):
+        pair = alph1[i] + alph2[j]
+        if alph1[i] != alph2[j]:
+            pairs.append(pair)
         else:
             continue
+for i in pairs:
+    print(i)
+    
