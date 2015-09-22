@@ -7,7 +7,6 @@ only lower case, one by line, ordered alphabetically.
 alph1 = "abcdefghijklmnopqrstuvwxyz"
 alph2 = "abcdefghijklmnopqrstuvwxyz"
 pairs = []
-comb = []
 for i in range(len(alph1)):
     for j in range(i, len(alph2)):
         pair = alph1[i] + alph2[j]
@@ -17,4 +16,3 @@ for i in range(len(alph1)):
             continue
 for i in pairs:
     print(i)
-    
