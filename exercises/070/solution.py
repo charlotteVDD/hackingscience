@@ -11,5 +11,5 @@ for l in range(26):
     for k in range(26):
         if alph[l] != alph[k]:
             print(alph[l] + alph[k])
-        else: 
+        else:
             continue
