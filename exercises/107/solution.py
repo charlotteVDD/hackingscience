@@ -20,7 +20,6 @@ def select_student(l, m):
         else:
             accepted.append(i)
     status = dict({'Accepted': accepted, 'Refused': ref})
-    sorted_status = sorted(status.items(), key=operator.itemgetter(0))
-    return(sorted_status)
+    return(status)
 
 print(select_student(my_class, 20))
