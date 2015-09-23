@@ -47,7 +47,7 @@ def check_my_city(c):
     a = 0
     code = []
     for i in velib:
-        if c in i['city']:
+        if c in i['city'] and len(c) != len(i['city']):
             a = a + 1
             code.append(i['zip'])
             c = str.lower(c)
@@ -65,3 +65,4 @@ check_my_city("bagnolet")
 check_my_city("Bagnolet")
 check_my_city("bagnolet-")
 check_my_city("orsay")
+check_my_city("Lille")
