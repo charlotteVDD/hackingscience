@@ -22,6 +22,7 @@ my_class = [[6, 'Joshua Tran'], [37, 'Jeanette Wafer'], [85, 'Susan Maddox'],
 
 def sort_by_mark(l):
     a = sort_a_list(my_class)
+    print(a)
     for i in a:
         print(i)
 
@@ -35,7 +36,7 @@ def sort_by_name(l):
     for i in b:
         print(i)
 
-# sort_by_mark(my_class)
+sort_by_mark(my_class)
 # sort_by_name(my_class)
 
 
