@@ -11,5 +11,3 @@ def is_prime(x):
         else:
             resultat = True
     return resultat
-
-print(is_prime(54))
