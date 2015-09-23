@@ -2,7 +2,7 @@
 """Created on Mon Sep 21 10:08:02 2015
 @author: CharlotteVDD."""
 
-import operator
+from operator import itemgetter
 
 
 my_class = [['Kermit Wade', 27], ['Hattie Schleusner', 67], ['Ben Ball', 5],
@@ -15,11 +15,14 @@ def select_student(l, m):
     for i in l:
         if i[1] < m:
             refused.append(i)
-            get_mark = operator.itemgetter(1)
+            get_mark = itemgetter(1)
             ref = list(sorted(refused, key=get_mark))
         else:
             accepted.append(i)
+            get_mark = itemgetter(1)
+            accepted.reverse()   
     status = dict({'Accepted': accepted, 'Refused': ref})
-    return(status)
+    sorted_status = sorted(status.items(), key=operator.itemgetter(0))
+    return(sorted_status)
 
 print(select_student(my_class, 20))
