@@ -4,7 +4,9 @@
 that outputs the position of the argument and its value in a new
 line using a for."""
 import sys
+import operator
+get_arg = operator.itemgetter(0, 1)
+a = list(enumerate(sys.argv))
 
-a = enumerate(sys.argv)
-for i in a:
-    print(i)
+for i in range(len(a)):
+        print(a[i][0], a[i][1])
