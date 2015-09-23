@@ -21,27 +21,21 @@ my_class = [[6, 'Joshua Tran'], [37, 'Jeanette Wafer'], [85, 'Susan Maddox'],
 
 
 def sort_by_mark(l):
-    sort_a_list(my_class)
-    for i in my_class:
+    a = sort_a_list(my_class)
+    for i in a:
         print(i)
 
-sort_by_mark(my_class)
-
-
 getname = operator.itemgetter(1)
-a = list(map(getname, my_class))
+c = list(map(getname, my_class))
+d = list(sorted(my_class, key=getname))
 
-b = list(sorted(my_class, key=getname))
-
-
-def getName(l):
+def sort_by_name(l):
     b = list(sorted(l, key=getname))
     for i in b:
         print(i)
-    return(b)
 
-getName(my_class)
-
+sort_by_mark(my_class)
+sort_by_name(my_class)
 
 def get_marks(l):
     for i in range(len(l)):
