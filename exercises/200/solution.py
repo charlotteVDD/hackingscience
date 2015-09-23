@@ -7,8 +7,8 @@ def is_prime(x):
     for i in range(2, x):
         r = x % i
         if r == 0:
-            return(False)
+            return False
         else:
-            return(True)
+            return True
 
 print(is_prime(13))
