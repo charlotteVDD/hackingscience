@@ -4,10 +4,10 @@
 
 
 def is_prime(x):
+    result = True
     for i in range(2, x):
         r = x % i
         if r == 0:
-            resultat = False
-        else:
-            resultat = True
-    return resultat
+            result = False
+    return(result)
+
