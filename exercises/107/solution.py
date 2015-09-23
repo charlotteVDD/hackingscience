@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Created on Mon Sep 21 10:08:02 2015
-@author: CharlotteVDD
-."""
+@author: CharlotteVDD."""
+
 import operator
 
 
@@ -13,15 +13,14 @@ def select_student(l, m):
     accepted = []
     refused = []
     for i in l:
-        if i[1] >= m:
-            accepted.append(i)
-        else:
+        if i[1] < m:
             refused.append(i)
             get_mark = operator.itemgetter(1)
             ref = list(sorted(refused, key=get_mark))
+        else:
+            accepted.append(i)
     status = dict({'Accepted': accepted, 'Refused': ref})
     sorted_status = sorted(status.items(), key=operator.itemgetter(0))
-    print(sorted_status)
     return(sorted_status)
 
-select_student(my_class, 20)
+print(select_student(my_class, 20))
