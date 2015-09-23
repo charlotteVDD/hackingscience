@@ -19,7 +19,9 @@ def select_student(l, m):
             refused.append(i)
             get_mark = operator.itemgetter(1)
             ref = list(sorted(refused, key=get_mark))
-    status = {'Accepted': accepted, 'Refused': ref}
-    return(status)
+    status = dict({'Accepted': accepted, 'Refused': ref})
+    sorted_status = sorted(status.items(), key=operator.itemgetter(0))
+    print(sorted_status)
+    return(sorted_status)
 
-print(select_student(my_class, 20))
+select_student(my_class, 20)
