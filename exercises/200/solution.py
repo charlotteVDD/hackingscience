@@ -5,6 +5,8 @@
 
 def is_prime(x):
     result = True
+    if x == 1:
+        result = False
     for i in range(2, x):
         r = x % i
         if r == 0:
