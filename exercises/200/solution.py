@@ -10,4 +10,3 @@ def is_prime(x):
         if r == 0:
             result = False
     return(result)
-
