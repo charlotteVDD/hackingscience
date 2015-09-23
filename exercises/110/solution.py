@@ -11,7 +11,9 @@ a = ["blabla", "b", "/", "1"]
 digit = str(digits)
 opr = ["+", "-", "*", "/", "%", "^"]
 
-if len(l) < 4:
+if len(l) != 4:
+    print("Error: please give 3 parameters")
+elif l == 0:
     print("Error: please give 3 parameters")
 elif l[1] in digit and l[3] in digit and l[2] in opr:
     if len(l) < 4:
