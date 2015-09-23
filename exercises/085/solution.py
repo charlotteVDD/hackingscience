@@ -29,13 +29,15 @@ getname = operator.itemgetter(1)
 c = list(map(getname, my_class))
 d = list(sorted(my_class, key=getname))
 
+
 def sort_by_name(l):
     b = list(sorted(l, key=getname))
     for i in b:
         print(i)
 
-sort_by_mark(my_class)
-sort_by_name(my_class)
+# sort_by_mark(my_class)
+# sort_by_name(my_class)
+
 
 def get_marks(l):
     for i in range(len(l)):
