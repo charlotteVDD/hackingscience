@@ -65,12 +65,3 @@ check_my_city("bagnolet")
 check_my_city("Bagnolet")
 check_my_city("bagnolet-")
 check_my_city("orsay")
-
-"""    val = i. values()
-    k = i.keys()
-    a = (i['city'])
-    print(a)
-
-{"stations_nb": 2, 
-"zip_code": ['93170', '93320'],
-"city": 'pantin'}"""
