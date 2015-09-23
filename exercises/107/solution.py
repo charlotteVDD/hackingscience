@@ -20,9 +20,10 @@ def select_student(l, m):
         else:
             accepted.append(i)
             get_mark = itemgetter(1)
-            accepted.reverse()   
+            accepted.reverse()
     status = dict({'Accepted': accepted, 'Refused': ref})
-    sorted_status = sorted(status.items(), key=operator.itemgetter(0))
+    sorted_status = sorted(status.items(), key=itemgetter(0))
     return(sorted_status)
 
 print(select_student(my_class, 20))
+print(select_student(my_class, 50))
