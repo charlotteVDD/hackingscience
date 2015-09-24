@@ -18,7 +18,4 @@ def perfect_shuffle(deck):
             pf.append(deck1[i])
             print(pf)
             pf.append(deck2[i])
-            print(pf)
-    else:
-        print("Deck vide")
     return(pf)
