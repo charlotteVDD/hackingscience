@@ -13,11 +13,11 @@ def perfect_shuffle(deck):
     return(deck)
 
 liste = list(itertools.product(range(10)))
-#print(liste)
+# print(liste)
 tot = []
 for i in range(10):
     random.shuffle(liste)
     tot.append(liste)
-#print(tot)
+# print(tot)
 
 # print(perfect_shuffle(liste))
