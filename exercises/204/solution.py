@@ -14,8 +14,11 @@ def perfect_shuffle(deck):
     if len(deck) > 0:
         deck1 = list(itertools.islice(deck, mid - 1))
         deck2 = list(itertools.islice(deck, mid, n))
-        for i in range(mid - 1):
-            pf.append(deck1[i])
-            print(pf)
-            pf.append(deck2[i])
+        if len(deck) == 2:
+            pf.append(deck2[1])
+            pf.append(deck1[0])
+        else:    
+            for i in range(mid - 1):
+                pf.append(deck1[i])
+                pf.append(deck2[i])
     return(pf)
