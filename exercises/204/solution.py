@@ -17,7 +17,7 @@ def perfect_shuffle(deck):
         if len(deck) == 2:
             pf.append(deck2[1])
             pf.append(deck1[0])
-        else:    
+        else:
             for i in range(mid - 1):
                 pf.append(deck1[i])
                 pf.append(deck2[i])
