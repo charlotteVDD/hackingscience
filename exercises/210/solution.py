@@ -10,7 +10,5 @@ result = 0
 prime = []
 for i in range(1000):
     a = is_prime.is_prime(i)
-    if a == True:
+    if a is True:
         result = result + i
-
-print(result)
