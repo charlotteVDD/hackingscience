@@ -32,8 +32,3 @@ def is_prime(x):
             else:
                 continue
     return True
-print(is_prime(9))
-print(is_prime(11))
-print(is_prime(97))
-print(is_prime(500))
-
