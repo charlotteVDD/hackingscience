@@ -15,5 +15,10 @@ def perfect_shuffle(deck):
     deck2 = list(itertools.islice(deck, mid, n))
     for i in range(mid - 1):
         pf.append(deck1[i])
+        print(pf)
         pf.append(deck2[i])
+        print(pf)
     return(pf)
+
+# l = range(10)
+# perfect_shuffle(l)
