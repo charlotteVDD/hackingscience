@@ -2,6 +2,8 @@
 """Created on Sep 23 10:08:02 2015
 @author: CharlotteVDD."""
 
+import string
+
 
 def is_prime_old(x):
     result = True
@@ -15,9 +17,11 @@ def is_prime_old(x):
 
 
 def is_prime(x):
-    if x == 1:
+    if x != string.digits:
         return False
     elif x == 0:
+        return False
+    elif x == 1:
         return False
     else:
         for i in range(2, int(x ** 0.5) + 1):
