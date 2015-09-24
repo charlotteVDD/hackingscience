@@ -17,9 +17,13 @@ def is_prime_old(x):
 def is_prime(x):
     if x == 1:
         return False
+    elif x == 0:
+        return False
     else:
         for i in range(2, int(x ** 0.5) + 1):
             if x % i == 0:
                 return False
             else:
                 return True
+
+print(is_prime(0)) 
