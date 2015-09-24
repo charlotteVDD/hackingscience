@@ -18,13 +18,9 @@ def perfect_shuffle(deck):
         pf.append(deck1[i])
         pf.append(deck2[i])
     return(pf)
-    
-        
-        
-# liste = range(1024)   
- 
-# perfect_shuffle(liste) 
-"""    
+# liste = range(1024)
+# perfect_shuffle(liste)
+"""
     for i in n :
         pf.append(deck[i])
         pf.append(deck[i + 2])
