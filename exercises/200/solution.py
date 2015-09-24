@@ -3,7 +3,7 @@
 @author: CharlotteVDD."""
 
 
-def is_prime(x):
+def is_prime_old(x):
     result = True
     if x == 1:
         result = False
@@ -12,3 +12,13 @@ def is_prime(x):
         if r == 0:
             result = False
     return(result)
+
+
+def is_prime(x):
+    for i in range(2, int(x**0.5)+1):
+        if x % i == 0:
+            return False
+
+    return True
+
+print(is_prime(500))
