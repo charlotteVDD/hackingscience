@@ -12,3 +12,4 @@ for i in range(1000):
     a = is_prime.is_prime(i)
     if a is True:
         result = result + i
+print(result)
