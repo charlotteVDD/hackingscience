@@ -15,6 +15,7 @@ def is_prime_old(x):
             result = False
     return(result)
 
+
 def is_prime(x):
     if x <= 0:
         return False
