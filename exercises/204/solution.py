@@ -11,7 +11,6 @@ def perfect_shuffle(deck):
     pf = []
     n = len(deck)
     mid = int(n / 2)
-    print(n)
     if n == 2:
         pf = [deck[0], deck[1]]
     elif n > 2:
