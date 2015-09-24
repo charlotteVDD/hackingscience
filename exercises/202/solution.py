@@ -10,9 +10,10 @@ starts with needle, and False otherwise.
 
 
 def starts_with(haystack, needle):
+    if len(needle) > len(haystack):
+        return False
     for i in range(len(needle)):
         if needle[i] != haystack[i]:
-            print('a')
             return False
         else:
             continue
