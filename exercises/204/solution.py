@@ -17,26 +17,3 @@ def perfect_shuffle(deck):
         pf.append(deck1[i])
         pf.append(deck2[i])
     return(pf)
-# liste = range(1024)
-# perfect_shuffle(liste)
-"""
-    for i in n :
-        pf.append(deck[i])
-        pf.append(deck[i + 2])
-    return(deck)
-
-print perfect_shuffle()
-
-liste = list(itertools.product(range(1024)))
-# print(liste)
-tot = []
-for i in range():
-    random.shuffle(liste)
-    tot.append(liste)
-
-# if tot[0] == tot[9]:
-# print("perfect")
-# print(tot)
-
-# print(perfect_shuffle(liste))
-"""
