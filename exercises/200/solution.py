@@ -31,6 +31,3 @@ def is_prime(x):
                 return False
             else:
                 return True
-
-print(is_prime(2))
-
