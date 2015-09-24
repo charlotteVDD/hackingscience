@@ -23,7 +23,3 @@ def is_prime(x):
                 return False
             else:
                 return True
-
-print(is_prime(1))
-print(is_prime(11))
-print(is_prime(20))
