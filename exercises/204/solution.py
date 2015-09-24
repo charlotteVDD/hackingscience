@@ -5,7 +5,6 @@ the given iterable.
 @author: CharlotteVDD
 """
 import itertools
-import random
 
 
 def perfect_shuffle(deck):
