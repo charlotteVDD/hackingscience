@@ -15,8 +15,15 @@ def is_prime_old(x):
 
 
 def is_prime(x):
-    for i in range(2, int(x ** 0.5) + 1):
-        if x % i == 0 and x == 1:
-            return False
+    if x == 1:
+        return False
+    else:
+        for i in range(2, int(x ** 0.5) + 1):
+            if x % i == 0:
+                return False
+            else:
+                return True
 
-    return True
+print(is_prime(1))
+print(is_prime(11))
+print(is_prime(20))
