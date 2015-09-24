@@ -15,15 +15,14 @@ def is_prime_old(x):
             result = False
     return(result)
 
-
 def is_prime(x):
-    if x != string.digits:
-        return False
-    elif x == 0:
+    if x <= 0:
         return False
     elif x == 1:
         return False
     elif x == 2:
+        return True
+    elif x == 3:
         return True
     else:
         for i in range(2, int(x ** 0.5) + 1):
