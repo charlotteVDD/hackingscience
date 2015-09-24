@@ -10,7 +10,3 @@ def is_multiple(a, b):
     if a % b == 0:
         return True
     return False
-
-print(is_multiple(6, 3))
-print(is_multiple(889, 15))
-print(is_multiple(15, 45))
