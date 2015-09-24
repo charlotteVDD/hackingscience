@@ -9,14 +9,33 @@ import random
 
 
 def perfect_shuffle(deck):
-    import random
-    random.shuffle(deck)
+    pf = []
+    n = len(deck)
+    mid = int(n / 2)
+    deck1 = list(itertools.islice(deck, mid - 1))
+    deck2 = list(itertools.islice(deck, mid, n))
+    for i in range(mid - 1):
+        pf.append(deck1[i])
+        pf.append(deck2[i])
+    return(pf)
+    
+        
+        
+# liste = range(1024)   
+ 
+# perfect_shuffle(liste) 
+"""    
+    for i in n :
+        pf.append(deck[i])
+        pf.append(deck[i + 2])
     return(deck)
+
+print perfect_shuffle()
 
 liste = list(itertools.product(range(1024)))
 # print(liste)
 tot = []
-for i in range(10):
+for i in range():
     random.shuffle(liste)
     tot.append(liste)
 
@@ -25,3 +44,4 @@ for i in range(10):
 # print(tot)
 
 # print(perfect_shuffle(liste))
+"""
