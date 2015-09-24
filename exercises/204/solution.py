@@ -9,15 +9,19 @@ import random
 
 
 def perfect_shuffle(deck):
+    import random
     random.shuffle(deck)
     return(deck)
 
-liste = list(itertools.product(range(10)))
+liste = list(itertools.product(range(1024)))
 # print(liste)
 tot = []
 for i in range(10):
     random.shuffle(liste)
     tot.append(liste)
+
+# if tot[0] == tot[9]:
+# print("perfect")
 # print(tot)
 
 # print(perfect_shuffle(liste))
